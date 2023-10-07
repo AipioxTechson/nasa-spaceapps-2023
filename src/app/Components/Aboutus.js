@@ -3,7 +3,7 @@ import { Grid, GridItem, Box, Flex, Heading } from "@chakra-ui/react";
 
 function Aboutus() {
 	return (
-		<Flex>
+		<Box>
 			<Heading
 				color="brand.200"
 				bg="brand.300"
@@ -13,38 +13,38 @@ function Aboutus() {
 				pt={20}
 				pl={20}
 			>
-				Most Popular Trips
+				About Us
 			</Heading>
 			<Grid
-				h="200px"
+				h="60vh"
 				templateRows="repeat(2, 1fr)"
 				templateColumns="repeat(2, 1fr)"
 				gap={4}
 				m={10}
 				p={5}
 			>
-				<GridItem rowSpan={1} colSpan={1}>
+				<GridItem rowSpan={1} colSpan={1} p={3} m={3} h="20vh" w="20vw">
+					<Box bg="brand.200" borderRadius="lg">
+						Non-profit
+					</Box>
+				</GridItem>
+				<GridItem rowSpan={1} colSpan={1} p={3} m={3} h="20vh" w="20vw">
 					<Box bg="brand.200" borderRadius="lg">
 						Fun
 					</Box>
 				</GridItem>
-				<GridItem rowSpan={1} colSpan={1}>
+				<GridItem rowSpan={1} colSpan={1} p={3} m={3} h="20vh" w="20vw">
 					<Box bg="brand.200" borderRadius="lg">
-						Fun
+						Safety guaranteed
 					</Box>
 				</GridItem>
-				<GridItem rowSpan={1} colSpan={1}>
+				<GridItem rowSpan={1} colSpan={1} p={3} m={3} h="20vh" w="20vw">
 					<Box bg="brand.200" borderRadius="lg">
-						Fun
-					</Box>
-				</GridItem>
-				<GridItem rowSpan={1} colSpan={1}>
-					<Box bg="brand.200" borderRadius="lg">
-						Fun
+						Sustainable
 					</Box>
 				</GridItem>
 			</Grid>
-		</Flex>
+		</Box>
 	);
 }
 
