@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, GridItem, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Flex, Heading } from "@chakra-ui/react";
 
 function Aboutus() {
 	return (
