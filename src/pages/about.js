@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../app/page.module.css'
 import { Button, ButtonGroup } from '@chakra-ui/react'
 
 export default function Home() {
