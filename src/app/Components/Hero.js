@@ -1,17 +1,24 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import Search from "./Search.js";
+import ActionItems from "./ActionItems.js";
 
 function HeroSection() {
 	return (
-		<Box p={10} m={10}>
-			<Heading fontWeight="light" size="4xl" textAlign="center">
+		<Box>
+			<Heading
+				color="brand.200"
+				fontWeight="light"
+				size="4xl"
+				textAlign="left"
+				pt={20}
+				pl={20}
+			>
 				EXPLORE SPACE
 			</Heading>
-			<Text textAlign="center" p={3}>
+			<Text color="brand.200" textAlign="left" pl={20}>
 				Create memories that are truly out of this world!
 			</Text>
-			<Search />
+			<ActionItems />
 		</Box>
 	);
 }
