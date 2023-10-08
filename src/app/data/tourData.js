@@ -28,7 +28,7 @@ export const TourData = {
     ]
   },
   Mars: {
-    globeImage: "mars_texture.jpg",
+    globeImage: "mars_surface.jpg",
     destinations: [
       {
         name: "Aureum Chaos",
@@ -38,7 +38,7 @@ export const TourData = {
       },
       {
         name: "Olympus Mons",
-        summary: "Yup",
+        summary: "Scaling the Summit of the Solar System",
         lat: (18.8),
         lng: (-132),
       },
@@ -51,7 +51,7 @@ export const TourData = {
       ]
   },
   Venus: {
-    globeImage: "venus_shaded.jpg",
+    globeImage: "venus_surface.jpg",
     destinations: [
       {
         name: "Maat Mons",
@@ -68,18 +68,36 @@ export const TourData = {
     ]
   },
   Jupiter: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "jupiter_surface.jpg",
     destinations: [
       {
         name: "The Great Red Spot",
         summary: "A storm bigger than earth",
-        lat: (Math.random() - 0.5) * 180,
-        lng: (Math.random() - 0.5) * 360,
+        lat: (-20),
+        lng: (-48),
       },
     ],
+    moonData : [
+      {
+        lat: 20,
+        lng: 20,
+        name: "IO",
+        alt: 0.5,
+        image: "IO_surface.jpg",
+        size: 5
+      },
+      {
+        lat: -50,
+        lng: 20,
+        name: "Europa",
+        alt: 0.8,
+        image: "europa_surface.png",
+        size: 4
+      }
+    ]
   },
   Mercury: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "mercury_surface.jpg",
     destinations: [
       {
         name: "Mercury",
@@ -90,7 +108,7 @@ export const TourData = {
     ],
   },
   Saturn: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "saturn_surface.jpg",
     destinations: [
       {
         name: "Saturn",
@@ -99,9 +117,20 @@ export const TourData = {
         lng: (Math.random() - 0.5) * 360,
       },
     ],
+    moonData : [
+      {
+        lat: 20,
+        lng: 20,
+        name: "Titan",
+        alt: 0.5,
+        image: "titan_surface2.jpg",
+        size: 5
+      }
+      
+    ]
   },
   Uranus: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "uranus_surface.jpg",
     destinations: [
       {
         name: "Uranus",
@@ -112,7 +141,7 @@ export const TourData = {
     ],
   },
   Neptune: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "neptune_surface.jpg",
     destinations: [
       {
         name: "Neptune",
@@ -123,7 +152,7 @@ export const TourData = {
     ],
   },
   Pluto: {
-    globeImage: "2k_mars.jpeg",
+    globeImage: "pluto_surface.jpg",
     destinations: [
       {
         name: "Pluto",
