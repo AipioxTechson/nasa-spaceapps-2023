@@ -1,15 +1,17 @@
+import { m } from "framer-motion";
 import Globe from "react-globe.gl"
+import * as THREE from 'three'
 
-const N = 300;
-const gData = [...Array(N).keys()].map(() => ({
-  lat: (Math.random() - 0.5) * 180,
-  lng: (Math.random() - 0.5) * 360,
-  size: Math.random() / 3,
-  color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
-}));
+const satObject = (e) => {
+  const loader = new THREE.TextureLoader();
+  const texture = loader.load (e.image)
+  const satGeometry = new THREE.SphereGeometry(e.size, 100, 100);
+  const satMaterial = new THREE.MeshLambertMaterial({transparent: true, opacity: 0.7 ,map: texture});
+  return new THREE.Mesh(satGeometry, satMaterial);
+}
 
 
-const GlobeNew = ({width, height, globeImage, destinations}) => (
+const GlobeNew = ({width, height, globeImage, destinations, moonData}) => (
   <Globe
       globeImageUrl={globeImage}
       labelsData={destinations}
@@ -22,6 +24,13 @@ const GlobeNew = ({width, height, globeImage, destinations}) => (
       labelResolution={3}
       width={width}
       height={height}
+      objectsData={moonData}
+      objectLabel="name"
+      objectLat="lat"
+      objectLng="lng"
+      objectAltitude="alt"
+      objectFacesSurface={false}
+      objectThreeObject={satObject}
     />
 )
 
