@@ -23,6 +23,11 @@ function Navbar() {
 					mt={3}
 					ml={3}
 					bg="brand.300"
+					_active={{
+						bg: 'brand.300',
+						transform: 'scale(0.98)',
+						borderColor: '#bec3c9',
+					}}
 				>
 					<Image h="40px" src="logo-h.png" />
 				</Button>
@@ -67,6 +72,11 @@ function Navbar() {
 						color="brand.200"
 						mt={3}
 						rightIcon={<ChevronDownIcon />}
+						_active={{
+							bg: 'brand.300',
+							transform: 'scale(0.98)',
+							borderColor: '#bec3c9',
+						}}
 					>
 						FAQ
 					</MenuButton>
@@ -83,6 +93,11 @@ function Navbar() {
 						color="brand.200"
 						mt={3}
 						rightIcon={<ChevronDownIcon />}
+						_active={{
+							bg: 'brand.300',
+							transform: 'scale(0.98)',
+							borderColor: '#bec3c9',
+						}}
 					>
 						Preparation
 					</MenuButton>
