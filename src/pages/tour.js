@@ -4,6 +4,7 @@ import { Text } from '@chakra-ui/react';
 import { useWindowSize } from "@uidotdev/usehooks";
 import { TourData } from '@/app/data/tourData';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const Globe = dynamic(
   () => import('@/app/Components/Globe'),
@@ -11,7 +12,7 @@ const Globe = dynamic(
 )
 
 const Destination = ({summary, name}) => (
-<Card margin={"2vh"}>
+<Card margin={"2vh"} as={Link} href="preview">
   <CardHeader>
     <Heading size='md'>{name}</Heading>
   </CardHeader>
