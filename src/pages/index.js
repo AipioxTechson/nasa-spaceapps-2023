@@ -3,9 +3,9 @@ import { ChakraProvider, Box } from "@chakra-ui/react";
 import theme from "../app/theme";
 import Navbar from "../app/Components/Navbar";
 import Hero from "../app/Components/Hero";
-import ActionItems from "../app/Components/ActionItems";
 import PopularSection from "../app/Components/PopularSection";
 import AboutUs from "../app/Components/AboutUs";
+import Footer from "../app/Components/Footer";
 import "@fontsource-variable/baloo-bhai-2";
 
 function MyApp({ Component, pageProps }) {
@@ -19,7 +19,8 @@ function MyApp({ Component, pageProps }) {
 				<Box>
 					<PopularSection />
 				</Box>
-					<AboutUs />
+				<AboutUs />
+				<Footer />
 			</Box>
 		</ChakraProvider>
 	);

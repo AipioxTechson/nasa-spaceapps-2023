@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import "@fontsource-variable/baloo-bhai-2";
 import DestinationInfo from "../app/Components/DestinationInfo";
 import Accomodations from "../app/Components/Accomodations";
@@ -9,7 +9,7 @@ import TripAbout from "../app/Components/TripAbout";
 
 export default function Itinerary() {
 	return (
-		<Box bg="brand.300" w="100vw" align="center">
+		<Box bg="brand.300" w="100vw" pb={10} align="center">
 			<Navbar />
 			<TripAbout />
 			<TimeSpent />
@@ -22,6 +22,7 @@ export default function Itinerary() {
 			<DestinationInfo />
 			<TimeSpent />
 			<Travel />
+            <Button>Book this tour!</Button>
 		</Box>
 	);
 }
