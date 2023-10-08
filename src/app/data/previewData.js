@@ -17,7 +17,7 @@ export const PreviewData = {
         title: "Ringside Retreat",
         summary: "Saturn is the second-largest planet in our solar system, known for its striking appearance due to its prominent ring system, which consists of thousands of individual ringlets made of ice and rock particles. This planet has over 80 moons, including Titan, which is larger than the planet Mercury.\nSaturn is known as a gas giant, as it does not have a solid surface like Earth. It's hexagonal storm is a unique feature located at its north pole. It's a persistent, six-sided jet stream with a diameter larger than Earth.​",
         tips: "The rings. Is more needed to be said?",
-        image: "https://images-assets.nasa.gov/image/PIA04913/PIA04913~orig.jpg?w=1016&h=1011&fit=crop&crop=faces%2Cfocalpoint",
+        image: "https://www.nasa.gov/wp-content/uploads/2019/09/stsci-h-p1943a-f-2076x1484-2.png?resize=768,549",
         packingList: ["Winter clothes", "Gas mask", "Sheild against rocks"],
     },
     "Venus": {
