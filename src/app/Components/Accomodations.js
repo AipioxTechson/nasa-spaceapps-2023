@@ -4,7 +4,7 @@ import {
 	Text,
 } from "@chakra-ui/react";
 
-function Accomodations() {
+function Accomodations({ name, info }) {
 	return (
 		<Box
 			w="80vw"
@@ -17,7 +17,10 @@ function Accomodations() {
 			<Text color="brand.600" fontWeight="bold" fontSize="xs">
 				ACCOMODATIONS
 			</Text>
-			<Text color="brand.600">Hotel: Hotel Mars</Text>
+			<Text color="brand.600">Hotel: {name}</Text>
+			<Text color="brand.600">
+				{info}
+			</Text>
 			<Text color="brand.600">
 				Instructions: A tour guide will bring you to your hotel.
 			</Text>
