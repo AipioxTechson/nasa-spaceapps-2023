@@ -20,7 +20,7 @@ const GlobeNew = ({width, height, globeImage, destinations, moonData}) => (
       labelText={d => d.name}
       labelSize={d => 3}
       labelDotRadius={d => 1}
-      labelColor={() => 'rgba(255, 165, 0, 0.75)'}
+      labelColor={() => 'rgba(0, 0, 0, 1)'}
       labelResolution={3}
       width={width}
       height={height}
