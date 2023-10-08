@@ -41,7 +41,7 @@ function AboutUs() {
 					</Text>
 				</Box>
 			</Flex>
-			<Flex ml={20} mr={5} mb={5}>
+			<Flex ml={20} mr={5} >
 				<Box bg="brand.200" borderRadius="lg" p={5} m={5} w="40vw">
 					<Heading fontWeight="light">Safe</Heading>
 					<Text>
