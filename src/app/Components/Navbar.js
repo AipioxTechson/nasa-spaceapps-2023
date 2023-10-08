@@ -16,7 +16,16 @@ function Navbar() {
 		<Box h={20}>
 			<HStack>
 				{/* <Flex> */}
-				<Image src="logo-h.png" h="40px" mt={3} ml={3} />
+				<Button
+					as="a"
+					href="/"
+					h="40px"
+					mt={3}
+					ml={3}
+					bg="brand.300"
+				>
+					<Image h="40px" src="logo-h.png" />
+				</Button>
 				<Menu>
 					<MenuButton
 						as={Button}
