@@ -10,6 +10,7 @@ import {
 	ModalCloseButton,
 	useDisclosure,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Preview() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -17,7 +18,7 @@ export default function Preview() {
 		<main>
 			<Box bgImage="url('/olympusmons.jpg')" h="100vh">
 				<Center bg="brand.300" p={5}>
-					<Button>Back</Button>
+					<Button as={Link} href="/tour">Back</Button>
 					<Spacer />
 					<Box align="center">
 						<Heading color="brand.200" fontWeight="light">

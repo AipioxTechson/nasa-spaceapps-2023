@@ -52,7 +52,7 @@ const DestinationsList = ({destinations, clickDestination, selectedDestinations,
 )
 
 const PlanetConfirm = () => (
-  <Button variant={"solid"} marginLeft="20vw">
+  <Button as={Link} href="/itinerary" variant={"solid"} marginLeft="20vw">
     Finalize your Journey
   </Button>
 );
@@ -68,8 +68,10 @@ export default function Tour() {
   useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
       let destinations = localStorage.getItem('destinations');
-      let newDet = destinations.split(",").map((dest) => dest)
-      setDestinations(newDet)
+      if (destinations != null){
+        let newDet = destinations.split(",").map((dest) => dest)
+        setDestinations(newDet)
+      }
     }
   }, []);
 

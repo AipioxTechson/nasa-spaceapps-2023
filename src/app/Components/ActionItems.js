@@ -10,12 +10,13 @@ import {
 	InputGroup,
 	Button,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 function ActionItems() {
 	return (
 		<Flex mt={5} ml={20}>
 			<Button>VIEW OUR FEATURED TOURS</Button>
-			<Button ml={5}>OR CREATE YOUR OWN</Button>
+			<Button as={Link} href="/tour" ml={5}>OR CREATE YOUR OWN</Button>
 		</Flex>
 	);
 }
