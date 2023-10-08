@@ -20,6 +20,8 @@ const GlobeNew = ({width, height, globeImage, destinations}) => (
       labelDotRadius={d => 1}
       labelColor={() => 'rgba(255, 165, 0, 0.75)'}
       labelResolution={3}
+      width={width}
+      height={height}
     />
 )
 
