@@ -30,6 +30,11 @@ function Navbar() {
 					<MenuButton
 						as={Button}
 						bg="brand.300"
+						_active={{
+							bg: 'brand.300',
+							transform: 'scale(0.98)',
+							borderColor: '#bec3c9',
+						}}
 						color="brand.200"
 						ml={20}
 						mt={3}
