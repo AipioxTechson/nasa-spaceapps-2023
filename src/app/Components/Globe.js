@@ -9,14 +9,17 @@ const gData = [...Array(N).keys()].map(() => ({
 }));
 
 
-const GlobeNew = ({width, height}) => (
+const GlobeNew = ({width, height, globeImage, destinations}) => (
   <Globe
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-      pointsData={gData}
-      pointAltitude="size"
-      pointColor="color"
-      width={width}
-      height={height}
+      globeImageUrl={globeImage}
+      labelsData={destinations}
+      labelLat={d => d.lat}
+      labelLng={d => d.lng}
+      labelText={d => d.name}
+      labelSize={d => 3}
+      labelDotRadius={d => 1}
+      labelColor={() => 'rgba(255, 165, 0, 0.75)'}
+      labelResolution={3}
     />
 )
 
