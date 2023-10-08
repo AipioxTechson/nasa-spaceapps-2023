@@ -29,9 +29,21 @@ function Navbar() {
 						Destinations
 					</MenuButton>
 					<MenuList>
-						<MenuItem>Temp1</MenuItem>
-						<MenuItem>Temp2</MenuItem>
-						<MenuItem>Temp3</MenuItem>
+						<MenuItem MenuItem as="a" href="mars">
+							Mars
+						</MenuItem>
+						<MenuItem MenuItem as="a" href="venus">
+							Venus
+						</MenuItem>
+						<MenuItem MenuItem as="a" href="mercury">
+							Mercury
+						</MenuItem>
+						<MenuItem MenuItem as="a" href="jupiter">
+							Jupiter
+						</MenuItem>
+						<MenuItem MenuItem as="a" href="saturn">
+							Saturn
+						</MenuItem>
 					</MenuList>
 				</Menu>
 				<Menu>
