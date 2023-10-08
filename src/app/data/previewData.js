@@ -34,6 +34,13 @@ export const PreviewData = {
         image: "https://mars.nasa.gov/system/site_config_values/meta_share_images/1_mars-nasa-gov.jpg",
         packingList: ["Potatoes"],
     },
+    "Uranus": {
+        title: "Crystal Aurora Haven",
+        summary: "Uranus is the seventh planet from the Sun in our solar system, and it is classified as an ice giant. It is the third-largest planet in our solar system and has a pale blue-green coloration due to the presence of trace amounts of methane in its atmosphere. Uranus has 27 moons and a set of faint and narrow rings. The ring system consists of 13 known rings, named after characters from the works of William Shakespeare and Alexander Pope.",
+        tips: "It may just rain diamonds on you...",
+        image: "https://images-assets.nasa.gov/image/PIA18182/PIA18182~orig.jpg",
+        packingList: ["Velvet bags"],
+    },
     "Maat Mons": {
         title: "Visit the Roman Goddess’ Fiery Volcano",
         summary: "Considered to be the most recently active volcano, Maat Mons sits in the Alto Regio region which spans from 10°S to 25° N and 180 to 250°E. The volcano could be situated on top of a hot spot and possibly could make it still an active volcano. The basaltic volcano has a great range in elevation from 8860 m to 100 m.",
