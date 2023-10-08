@@ -16,7 +16,7 @@ import {
 
 function TripCard() {
 	return (
-		<Flex h="400px" w="20vw" bg="brand.200" borderRadius="lg" p={5} m={5}>
+		<Flex h="400px" w="20vw" bg="brand.400" borderRadius="lg" p={5} m={5}>
 			<Stack>
 				<Image borderRadius="lg" src="tour1.jpg" w="100vw" />
 				<Heading>Trip name</Heading>
