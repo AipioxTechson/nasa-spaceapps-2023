@@ -2,7 +2,7 @@ export const faqData = {
 	questions: [
 		{
 			q: "How are we traveling from one planet to another?",
-			a: "When you purchase tickets for the space tour, you have also booked tickets for a seat on our spaceship that will be flown by our world renowned crew. The spaceship will not only take you to space but will take you to all the destinations listed on the tour guide.",
+			a: "Discover a new era in space tourism with our exclusive partnerships. Our visionary spacecraft partners have harnessed warp drive technology, enabling us to offer journeys at the speed of light. Experience the future of travel today. \n When you purchase tickets for the space tour, you have also booked tickets for a seat on our spaceship that will be flown by our world renowned space crew.",
 		},
 		{
 			q: "Am I going to get motion sickness?",

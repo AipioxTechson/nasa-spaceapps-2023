@@ -5,7 +5,9 @@ export const featuredData = {
 		planets: [
 			{
 				destinations: ["Saturn"],
-				hotel: "Ringmaster's Retreat",
+				hotel: "Ringmaster's Retreat"
+				travel_time:
+				type:,
 			},
 			{
 				destinations: ["Uranus"],

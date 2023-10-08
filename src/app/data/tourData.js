@@ -27,6 +27,22 @@ export const TourData = {
       }
     ]
   },
+  Mercury: {
+    globeImage: "mercury_surface.jpg",
+    destinations: [
+      {
+        name: "Caloris Basin",
+        summary: "Visit the youngest large impact basin on Mercury",
+        lat: (30),
+        lng: (-190),
+      },{
+        name: "Poles",
+        summary: "Shielded from the Sun in an Icy Abyss",
+        lat: (90),
+        lng: (0),
+      }
+    ],
+  },
   Mars: {
     globeImage: "mars_surface.jpg",
     destinations: [
@@ -87,26 +103,24 @@ export const TourData = {
         size: 5
       },
       {
-        lat: -50,
+        lat: -10,
         lng: 20,
         name: "Europa",
         alt: 0.8,
         image: "europa_surface.png",
         size: 4
+      },
+      {
+        lat: 0,
+        lng: 200,
+        name: "Ganymede",
+        alt: 0.6,
+        image: "ganymede_surface.jpg",
+        size: 4
       }
     ]
   },
-  Mercury: {
-    globeImage: "mercury_surface.jpg",
-    destinations: [
-      {
-        name: "Mercury",
-        summary: "A storm bigger than earth",
-        lat: (Math.random() - 0.5) * 180,
-        lng: (Math.random() - 0.5) * 360,
-      },
-    ],
-  },
+ 
   Saturn: {
     globeImage: "saturn_surface.jpg",
     destinations: [
@@ -124,9 +138,8 @@ export const TourData = {
         name: "Titan",
         alt: 0.5,
         image: "titan_surface2.jpg",
-        size: 5
+        size: 6
       }
-      
     ]
   },
   Uranus: {
