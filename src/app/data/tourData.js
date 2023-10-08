@@ -37,7 +37,7 @@ export const TourData = {
         lng: (-190),
       },{
         name: "Poles",
-        summary: "Shielded from the Sun in an Icy Abyss",
+        summary: "Shielded from the Sun in an Icy Abyssgit oull",
         lat: (90),
         lng: (0),
       }
@@ -124,6 +124,11 @@ export const TourData = {
   Saturn: {
     globeImage: "saturn_surface.jpg",
     destinations: [
+      {
+        name: "Titan",
+        summary: "Saturns largest moon",
+        
+      },
       {
         name: "Saturn",
         summary: "A storm bigger than earth",

@@ -2,24 +2,34 @@ export const featuredData = {
 	featured:[ {
 		name: "Spooky tour",
 		date: ["01-01-2034", "02-90-2034"],
-		planets: [
-			{
-				destinations: ["Saturn"],
-				hotel: "Ringmaster's Retreat",
-				travel_time: '6 hours' ,
+		destinations: [
+			{	name: "Caloris Basin",
+				planet: "Mercury",
+				hotel: "Solar Flare Retreat",
+				travel_time: '5 mins' ,
 				type: 'Warp Drive',
 			},
 			{
-				destinations: ["Uranus"],
-				hotel: "Crystal Chateau",
+				name: "The poles",
+				planet: "Mercury",
+				hotel: "Solar Flare Retreat",
+				travel_times: '1 min',
+				type: 'Express Train',
 			},
 			{
-				destinations: ["Jupiter", "The Great Red Spot"],
-				hotel: "Storm Seeker Lodge",
+				name: "Maat Mons",
+				planet: "Venus",
+				hotel: "Cloud 9 Oasis",
+				travel_times: '3 min',
+				type: 'Warp Drive',
 			},
+			
 			{
-				destinations: ["Neptune"],
-				hotel: "Aqua Voyager Resort",
+				name: "Olympus Mons",
+				planet: "Mars",
+				hotel: "Red Rock Resort",
+				travel_times: '9 min',
+				type: 'Warp Drive'
 			},
 		],
 	},
