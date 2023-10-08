@@ -1,4 +1,15 @@
-import { Box, Button } from "@chakra-ui/react";
+import {
+	Box,
+	Button,
+	Modal,
+	ModalOverlay,
+	ModalContent,
+	ModalHeader,
+	ModalFooter,
+	ModalBody,
+	ModalCloseButton,
+	useDisclosure,
+} from "@chakra-ui/react";
 import "@fontsource-variable/baloo-bhai-2";
 import DestinationInfo from "../app/Components/DestinationInfo";
 import Accomodations from "../app/Components/Accomodations";
@@ -9,6 +20,7 @@ import TripAbout from "../app/Components/TripAbout";
 import { featuredData } from "@/app/data/featuredData";
 
 export default function Itinerary() {
+	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<Box bg="brand.300" w="100vw" pb={10} align="center">
 			<Navbar />
@@ -32,7 +44,24 @@ export default function Itinerary() {
 					<Accomodations name={planet.hotel} />
 				</>
 			))}
-			<Button>Book this tour!</Button>
+			<Button onClick={onOpen}>Book this tour!</Button>
+			<Modal isOpen={isOpen} onClose={onClose}>
+				<ModalOverlay />
+				<ModalContent>
+					<ModalHeader>Oops!</ModalHeader>
+					<ModalCloseButton />
+					<ModalBody>
+						This feature is still marinating in the innovation oven,
+						but trust us, it's gonna be worth the wait. Stay tuned
+						for the grand unveiling!
+					</ModalBody>
+					<ModalFooter>
+						<Button colorScheme="blue" mr={3} onClick={onClose}>
+							Close
+						</Button>
+					</ModalFooter>
+				</ModalContent>
+			</Modal>
 		</Box>
 	);
 }

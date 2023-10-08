@@ -4,19 +4,13 @@ export const featuredData = {
 		date: "01-01-2034",
 		planets: [
 			{
-				destinations: ["Saturn", "Rings", "Titan"],
+				destinations: ["Saturn"],
 				hotel: "Ringmaster's Retreat",
 			},
 			{
 				destinations: ["Uranus"],
 				hotel: "Crystal Chateau",
 			},
-		],
-	},
-	"06-10-2034": {
-		name: "Spooky tour 2",
-		date: "06-10-2034",
-		planets: [
 			{
 				destinations: ["Jupiter", "The Great Red Spot"],
 				hotel: "Storm Seeker Lodge",
@@ -28,7 +22,7 @@ export const featuredData = {
 		],
 	},
 	"07-10-2034": {
-		name: "Spooky tour 3",
+		name: "Educational Tour",
 		date: "07-10-2034",
 		planets: [
 			{
@@ -39,10 +33,18 @@ export const featuredData = {
 				destinations: ["Venus", "Maat Mons", "Artemis Chasma"],
 				hotel: "Cloud 9 Oasis",
 			},
+			{
+				destinations: ["Jupiter", "The Great Red Spot"],
+				hotel: "Storm Seeker Lodge",
+			},
+			{
+				destinations: ["Neptune"],
+				hotel: "Aqua Voyager Resort",
+			},
 		],
 	},
 	"19-09-2035": {
-		name: "Spooky tour 4",
+		name: "Relaxing Tour",
 		date: "19-09-2035",
 		planets: [
 			{
@@ -57,6 +59,14 @@ export const featuredData = {
 					"Olympus Mons",
 				],
 				hotel: "Red Rock Resort",
+			},
+			{
+				destinations: ["Jupiter", "The Great Red Spot"],
+				hotel: "Storm Seeker Lodge",
+			},
+			{
+				destinations: ["Neptune"],
+				hotel: "Aqua Voyager Resort",
 			},
 		],
 	},
