@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, GridItem, Box, Flex, Heading } from "@chakra-ui/react";
 
-function Aboutus() {
+function AboutUs() {
 	return (
 		<Box>
 			<Heading
@@ -48,4 +48,4 @@ function Aboutus() {
 	);
 }
 
-export default Aboutus;
+export default AboutUs;
