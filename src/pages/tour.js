@@ -5,6 +5,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import { TourData } from '@/app/data/tourData';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Navbar from '@/app/Components/Navbar';
 
 const Globe = dynamic(
   () => import('@/app/Components/Globe'),
@@ -42,6 +43,7 @@ const DestinationsList = ({destinations, clickDestination, selectedDestinations,
   maxHeight={"83vh"}
   paddingTop="2vh"
 >
+  <Text textAlign={"center"}>Select atleast two destinations to create a tour</Text>
   {destinations.map(({summary, name}) => {
     const clickPlanet = () => clickDestination(name)
     const removePlanet = () => removeDestination(name)
@@ -51,8 +53,8 @@ const DestinationsList = ({destinations, clickDestination, selectedDestinations,
 </Box>
 )
 
-const PlanetConfirm = () => (
-  <Button as={Link} href="/itinerary" variant={"solid"} marginLeft="20vw">
+const PlanetConfirm = ({isDisabled}) => (
+  <Button isDisabled={isDisabled} as={Link} href="/itinerary" variant={"solid"} marginLeft="20vw">
     Finalize your Journey
   </Button>
 );
@@ -105,6 +107,7 @@ export default function Tour() {
 
   return (
     <main>
+      <Navbar/>
 <Grid
   h='100vh'
   w='100vw'
@@ -116,7 +119,7 @@ export default function Tour() {
   <GridItem rowSpan={5} colSpan={4} children={<div><Globe width={width / 2} height={5 * height / 6} globeImage={planetData.globeImage} destinations={planetData.destinations} moonData={planetData.moonData}/></div>}/>
   <GridItem rowSpan={5} colSpan={4}  children={<DestinationsList destinations={planetData.destinations} selectedDestinations={selectedDestinations} clickDestination={selectDestination} removeDestination={removeDestination}/>}/>
   <GridItem colSpan={4} children={<PlanetSelect/>}/>
-  <GridItem colSpan={4} children={<PlanetConfirm/>}/>
+  <GridItem colSpan={4} children={<PlanetConfirm isDisabled={selectedDestinations.length < 2}/>}/>
 </Grid>
     </main>
   )

@@ -11,11 +11,13 @@ import {
 	useDisclosure,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import Navbar from "@/app/Components/Navbar";
 
 export default function Preview() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<main>
+			<Navbar/>
 			<Box bgImage="url('/olympusmons.jpg')" h="100vh">
 				<Center bg="brand.300" p={5}>
 					<Button as={Link} href="/tour">Back</Button>
