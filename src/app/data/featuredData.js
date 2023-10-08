@@ -16,9 +16,9 @@ export const FeturedData = {
             }
         ]
     },
-    "06-10-2024": {
+    "06-10-2034": {
         name: "Spooky tour 2",
-        date: "06-10-2024",
+        date: "06-10-2034",
         planets: [
             {
                 destinations: [
@@ -31,6 +31,45 @@ export const FeturedData = {
                     "Neptune",
                 ],
                 hotel: "Aqua Voyager Resort",
+            }
+        ]
+    },
+    "07-10-2034": {
+        name: "Spooky tour 3",
+        date: "07-10-2034",
+        planets: [
+            {
+                destinations: [
+                    "Mercury",
+                ],
+                hotel: "Solar Flare Retreat",
+            }, {
+                destinations: [
+                    "Venus",
+                    "Maat Mons",
+                    "Artemis Chasma",
+                ],
+                hotel: "Cloud 9 Oasis",
+            }
+        ]
+    },
+    "19-09-2035": {
+        name: "Spooky tour 4",
+        date: "19-09-2035",
+        planets: [
+            {
+                destinations: [
+                    "Mercury",
+                ],
+                hotel: "Solar Flare Retreat",
+            }, {
+                destinations: [
+                    "Mars",
+                    "Aureum Chaos",
+                    "Noctis Labyrinthus",
+                    "Olympus Mons",
+                ],
+                hotel: "Red Rock Resort",
             }
         ]
     }
