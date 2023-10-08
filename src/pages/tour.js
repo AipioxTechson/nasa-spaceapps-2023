@@ -15,7 +15,7 @@ const Globe = dynamic(
 const Destination = ({summary, name, isSelected, onClick}) => (
   <Grid w="100%" templateColumns='repeat(8, 1fr)'>
   <GridItem colSpan={6}>
-    <Card margin={"2vh"} as={Link} href="preview">
+    <Card margin={"2vh"} as={Link} href={`preview/${name}`}>
       <CardHeader>
         <Heading size='md'>{name}</Heading>
       </CardHeader>
