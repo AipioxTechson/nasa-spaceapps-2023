@@ -17,6 +17,16 @@ export const TourData = {
 				lng: (Math.random() - 0.5) * 360,
 			},
 		],
+    moonData: [
+      {
+        lat: 20,
+        lng: 20,
+        name: "Test",
+        alt: 0.5,
+        image: "2k_mars.jpeg",
+        size: 10
+      }
+    ]
 	},
 	Mars: {
 		globeImage: "2k_mars.jpeg",
