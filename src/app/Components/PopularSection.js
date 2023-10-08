@@ -8,7 +8,7 @@ import TripCard from "./TripCard";
 
 function PopularSection() {
 	return (
-		<Stack>
+		<Stack id="popular-tours">
 			<Heading
 				color="brand.200"
 				bg="brand.300"

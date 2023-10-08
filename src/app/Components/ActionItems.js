@@ -15,7 +15,7 @@ import Link from "next/link";
 function ActionItems() {
 	return (
 		<Flex mt={5} ml={20}>
-			<Button>VIEW OUR FEATURED TOURS</Button>
+			<Button as={Link} href="#popular-tours" scroll={false}>VIEW OUR FEATURED TOURS</Button>
 			<Button as={Link} href="/tour" ml={5}>OR CREATE YOUR OWN</Button>
 		</Flex>
 	);
