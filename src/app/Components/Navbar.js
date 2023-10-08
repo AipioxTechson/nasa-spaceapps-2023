@@ -8,9 +8,6 @@ import {
 	Box,
 	HStack,
 	Image,
-	Flex,
-	Text,
-	Spacer,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 

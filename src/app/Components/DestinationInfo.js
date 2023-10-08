@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Image, Text, Heading, Button, Flex } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
 
 function DestinationInfo() {
 	return (

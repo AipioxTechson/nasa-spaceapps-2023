@@ -1,4 +1,4 @@
-import { Box, Button, Text, Heading, Center, Spacer } from "@chakra-ui/react";
+import { Box, Text} from "@chakra-ui/react";
 import "@fontsource-variable/baloo-bhai-2";
 
 export default function TimeSpent() {
