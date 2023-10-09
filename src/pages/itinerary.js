@@ -27,7 +27,7 @@ export default function Itinerary() {
 		(x) => x.name == localStorage.getItem("tour")
 	);
 	var timeOfDay = true;
-    var day = 1;
+	var day = 1;
 	return (
 		<Box bg="brand.300" w="100vw" pb={10} align="center">
 			<Navbar />
@@ -38,14 +38,15 @@ export default function Itinerary() {
 					<DestinationInfo
 						name={destination.name}
 						planet={destination.planet}
+						image={destination.image}
 					/>
 					<Travel
 						type={destination.type}
 						time={destination.travel_time}
 					/>
 					{(timeOfDay = !timeOfDay)}
-                    {day = day + timeOfDay}
-                    {timeOfDay && <Accomodations name={destination.hotel} />}
+					{(day = day + timeOfDay)}
+					{timeOfDay && <Accomodations name={destination.hotel} />}
 				</>
 			))}
 			<Button onClick={onOpen}>Book this tour!</Button>
