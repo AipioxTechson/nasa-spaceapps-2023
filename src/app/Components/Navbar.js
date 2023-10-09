@@ -56,6 +56,7 @@ function Navbar() {
 				</Menu>
 				<Button
 					href="faq"
+					as="a"
 					bg="brand.300"
 					color="brand.200"
 					mt={3}

@@ -32,7 +32,7 @@ const Destination = ({summary, name, isSelected, onClick}) => (
     </Card>
   </GridItem>
   <GridItem>
-    <Button padding={"2vh"} margin={"2vh"} onClick={onClick}>{isSelected?  "𐄂" :"✓" }</Button>
+    <Button padding={"2vh"} margin={"2vh"} bgColor={isSelected? "brand.300" :"#647365"} onClick={onClick}>{isSelected?  "𐄂" :"Add +" }</Button>
   </GridItem>
   </Grid>
 );
@@ -43,7 +43,7 @@ const DestinationsList = ({destinations, clickDestination, selectedDestinations,
   maxHeight={"83vh"}
   paddingTop="2vh"
 >
-  <Text textAlign={"center"}>Select atleast two destinations to create a tour</Text>
+  <Text textAlign={"center"}>Select atleast 2 destinations to create a tour</Text>
   {destinations.map(({summary, name}) => {
     const clickPlanet = () => clickDestination(name)
     const removePlanet = () => removeDestination(name)
@@ -107,7 +107,9 @@ export default function Tour() {
 
   return (
     <main>
+      <Box bg="brand.300">
       <Navbar/>
+      </Box>
 <Grid
   h='100vh'
   w='100vw'
