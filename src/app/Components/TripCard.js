@@ -28,18 +28,21 @@ function TripCard({ tour }) {
 		<Tilt
 			options={{ scale: 3, max: 35 }}
 			style={{
-				width: "30vw",
 				padding: "30px",
 				margin: "10px",
 				background: "#0b101b",
 			}}
 		>
 			<Stack>
-				<Image borderRadius="lg" src="tour1.jpg" w="100vw" />
+				<Image
+					borderRadius="lg"
+					src={tour.destinations[0].image}
+					h="300px"
+					objectFit="cover"
+				/>
 				<Heading color="brand.200" fontWeight="light">
 					{tour.name}
 				</Heading>
-				<Text color="brand.200">DESC HERE</Text>
 				<Text color="brand.200">Upcoming tours:</Text>
 				{tour.date.map((date) => (
 					<Button onClick={selectTour}>{date}</Button>
