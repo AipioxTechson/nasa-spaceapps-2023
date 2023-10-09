@@ -13,16 +13,38 @@ import {
 	Image,
 	Stack,
 } from "@chakra-ui/react";
-import Tilt from 'react-vanilla-tilt'
+import Tilt from "react-vanilla-tilt";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-function TripCard() {
+function TripCard({ tour }) {
+	const router = useRouter();
+	const selectTour = () => {
+		localStorage.setItem("tour", tour.name);
+		router.push("/itinerary");
+	};
 	return (
-		<Tilt  options={{ scale: 3, max: 35 }} style={{width: "300px", padding: "30px", margin: "10px", background:"#0b101b"}}>
-				<Stack>
-					<Image borderRadius="lg" src="tour1.jpg" w="100vw" />
-					<Heading>Trip name</Heading>
-					<Text>Trip desc</Text>
-				</Stack>
+		<Tilt
+			options={{ scale: 3, max: 35 }}
+			style={{
+				width: "30vw",
+				padding: "30px",
+				margin: "10px",
+				background: "#0b101b",
+			}}
+		>
+			<Stack>
+				<Image borderRadius="lg" src="tour1.jpg" w="100vw" />
+				<Heading color="brand.200" fontWeight="light">
+					{tour.name}
+				</Heading>
+				<Text color="brand.200">DESC HERE</Text>
+				<Text color="brand.200">Upcoming tours:</Text>
+				{tour.date.map((date) => (
+					<Button onClick={selectTour}>{date}</Button>
+				))}
+			</Stack>
 		</Tilt>
 	);
 }

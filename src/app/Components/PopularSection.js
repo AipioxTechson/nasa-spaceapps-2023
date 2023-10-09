@@ -5,6 +5,7 @@ import {
     Stack,
 } from "@chakra-ui/react";
 import TripCard from "./TripCard";
+import { featuredData } from "@/app/data/featuredData";
 
 function PopularSection() {
 	return (
@@ -21,10 +22,9 @@ function PopularSection() {
 				Most Popular Trips
 			</Heading>
 			<Flex pl={20} pb={20} bg="brand.300" align="center">
-				<TripCard />
-				<TripCard />
-				<TripCard />
-				<TripCard />
+				{featuredData["featured"].map((tour) => (
+					<TripCard tour={tour}/>
+				))}
 			</Flex>
 		</Stack>
 	);
