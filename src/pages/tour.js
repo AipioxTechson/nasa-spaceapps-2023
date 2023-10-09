@@ -62,9 +62,9 @@ const PlanetConfirm = ({isDisabled}) => (
 
 export default function Tour() {
   const { width, height } = useWindowSize();
-  const [planet, setPlanet] = useState("Earth");
+  const [planet, setPlanet] = useState("Mars");
 
-  const [planetData, setPlanetData] = useState(TourData["Earth"]);
+  const [planetData, setPlanetData] = useState(TourData["Mars"]);
   const [selectedDestinations, setDestinations] = useState([]);
 
   useEffect(() => {
