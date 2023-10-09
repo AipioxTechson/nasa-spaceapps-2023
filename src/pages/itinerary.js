@@ -26,13 +26,15 @@ export default function Itinerary() {
 	var retrievedTour = featuredData["featured"].find(
 		(x) => x.name == localStorage.getItem("tour")
 	);
+	var timeOfDay = true;
+    var day = 1;
 	return (
 		<Box bg="brand.300" w="100vw" pb={10} align="center">
 			<Navbar />
 			<TripAbout name={retrievedTour.name} />
 			{retrievedTour.destinations.map((destination) => (
 				<>
-					<TimeSpent />
+					<TimeSpent day={day} isMorning={timeOfDay} />
 					<DestinationInfo
 						name={destination.name}
 						planet={destination.planet}
@@ -41,9 +43,11 @@ export default function Itinerary() {
 						type={destination.type}
 						time={destination.travel_time}
 					/>
+					{(timeOfDay = !timeOfDay)}
+                    {day = day + timeOfDay}
+                    {timeOfDay && <Accomodations name={destination.hotel} />}
 				</>
 			))}
-			<Accomodations name={retrievedTour.destinations[0].hotel} />
 			<Button onClick={onOpen}>Book this tour!</Button>
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
