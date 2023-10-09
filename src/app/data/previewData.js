@@ -78,7 +78,7 @@ export const PreviewData = {
     },
     "The Great Red Spot": {
         title: "A storm bigger than earth",
-        summary: "The Great Red Spot is the most famous geographical feature on Jupiter. It is a giant storm that is twice the size of Earth. Roughly the size of 2 Earths, can you cross through the fantastical surface?",
+        summary: "The Great Red Spot is the most famous geographical feature on Jupiter. It is a giant storm that is twice the size of Earth. Roughly the size of 2 Earths, can you cross through the fantastical storm?",
         tips: "",
         image: "https://www.nasa.gov/wp-content/uploads/2015/08/hotspot_cover_1280.jpg",
         packingList: [""],
