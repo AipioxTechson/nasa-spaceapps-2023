@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
+const planets = ["Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 function Navbar() {
 	return (
 		<Box h={20}>
@@ -48,21 +49,9 @@ function Navbar() {
 						Destinations
 					</MenuButton>
 					<MenuList>
-						<MenuItem MenuItem as="a" href="mars">
-							Mars
-						</MenuItem>
-						<MenuItem MenuItem as="a" href="venus">
-							Venus
-						</MenuItem>
-						<MenuItem MenuItem as="a" href="mercury">
-							Mercury
-						</MenuItem>
-						<MenuItem MenuItem as="a" href="jupiter">
-							Jupiter
-						</MenuItem>
-						<MenuItem MenuItem as="a" href="saturn">
-							Saturn
-						</MenuItem>
+						{planets.map((planet) => (<MenuItem MenuItem as="a" href={`${planet.toLowerCase()}`}>
+							{planet}
+						</MenuItem>))}
 					</MenuList>
 				</Menu>
 				<Button
