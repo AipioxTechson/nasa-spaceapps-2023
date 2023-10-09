@@ -72,16 +72,16 @@ export const PreviewData = {
     "Noctis Labyrinthus": {
         title: "Can you escape the Great Martian Maze?",
         summary: "Located northwest to the Tharsis Rise, the landscape has deep steep sided valleys and flat topped mesas, making it the perfect maze. Volcanic activity near the Tharsis rise is believed to have created the fault. Visit the “Labyrinth of the Night” and admire the different minerals.",
-        tips: "",
+        tips: "Try not to get lost",
         image: "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2007/11/noctis_labyrinthus_perspective_view2/10173090-2-eng-GB/Noctis_Labyrinthus_perspective_view_pillars.jpg",
-        packingList: [""],
+        packingList: ["Compass", "Map"],
     },
     "Olympus Mons": {
         title: "Hike the legendary greek mount Olympus",
         summary: "Visit Mars' largest volcano, Olympus Mons and enjoy the  night view.  The volcano rises 27 km high which is higher than Moana Lao which is only 8..6 km high.",
-        tips: "",
+        tips: "Get your cardio in as there is a long trek ahead",
         image: "https://nssdc.gsfc.nasa.gov/imgcat/midres/vo1_mh20n133.gif",
-        packingList: [""],
+        packingList: ["Your favourite mountain boots", "A Helmet"],
     },
     "The Great Red Spot": {
         title: "A storm bigger than earth",
