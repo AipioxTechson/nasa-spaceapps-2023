@@ -119,7 +119,6 @@ export default function Tour() {
   <GridItem rowSpan={5} colSpan={4} children={<div><Globe width={width / 2} height={5 * height / 6} globeImage={planetData.globeImage} destinations={planetData.destinations} moonData={planetData.moonData}/></div>}/>
   <GridItem rowSpan={5} colSpan={4}  children={<DestinationsList destinations={planetData.destinations} selectedDestinations={selectedDestinations} clickDestination={selectDestination} removeDestination={removeDestination}/>}/>
   <GridItem colSpan={4} children={<PlanetSelect/>}/>
-  <GridItem colSpan={4} children={<PlanetConfirm isDisabled={selectedDestinations.length < 2}/>}/>
 </Grid>
     </main>
   )
