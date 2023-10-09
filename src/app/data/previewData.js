@@ -41,6 +41,13 @@ export const PreviewData = {
         image: "https://images-assets.nasa.gov/image/PIA18182/PIA18182~orig.jpg",
         packingList: ["Velvet bags"],
     },
+    "Neptune": {
+        title: "Diamond Depths",
+        summary: "Neptune is the eighth and farthest planet from the Sun in the Solar System. It is an ice giant with a thick atmosphere of hydrogen, helium, and methane. Neptune has a Great Dark Spot, which is a giant storm that is similar to Jupiter's Great Red Spot.",
+        tips: "Bring your strongest umbrealla as it may rain crystals...",
+        image: "https://voyager.jpl.nasa.gov/assets/images/galleries/images-voyager-took/neptune/neptunex.gif",
+        packingList: ["Your best winter jackets"],
+    },
     "Maat Mons": {
         title: "Visit the Roman Goddess’ Fiery Volcano",
         summary: "Considered to be the most recently active volcano, Maat Mons sits in the Alto Regio region which spans from 10°S to 25° N and 180 to 250°E. The volcano could be situated on top of a hot spot and possibly could make it still an active volcano. The basaltic volcano has a great range in elevation from 8860 m to 100 m.",
@@ -65,16 +72,16 @@ export const PreviewData = {
     "Noctis Labyrinthus": {
         title: "Can you escape the Great Martian Maze?",
         summary: "Located northwest to the Tharsis Rise, the landscape has deep steep sided valleys and flat topped mesas, making it the perfect maze. Volcanic activity near the Tharsis rise is believed to have created the fault. Visit the “Labyrinth of the Night” and admire the different minerals.",
-        tips: "",
+        tips: "Try not to get lost",
         image: "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2007/11/noctis_labyrinthus_perspective_view2/10173090-2-eng-GB/Noctis_Labyrinthus_perspective_view_pillars.jpg",
-        packingList: [""],
+        packingList: ["Compass", "Map"],
     },
     "Olympus Mons": {
         title: "Hike the legendary greek mount Olympus",
         summary: "Visit Mars' largest volcano, Olympus Mons and enjoy the  night view.  The volcano rises 27 km high which is higher than Moana Lao which is only 8..6 km high.",
-        tips: "",
+        tips: "Get your cardio in as there is a long trek ahead",
         image: "https://nssdc.gsfc.nasa.gov/imgcat/midres/vo1_mh20n133.gif",
-        packingList: [""],
+        packingList: ["Your favourite mountain boots", "A Helmet"],
     },
     "The Great Red Spot": {
         title: "A storm bigger than earth",

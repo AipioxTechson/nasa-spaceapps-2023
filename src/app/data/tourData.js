@@ -1,32 +1,5 @@
 // Earth is an example
 export const TourData = {
-  Earth: {
-		globeImage: "//unpkg.com/three-globe/example/img/earth-night.jpg",
-		destinations: [
-			{
-				name: "University of Toronto",
-				summary: "Best uni ever",
-				lat: (Math.random() - 0.5) * 180,
-				lng: (Math.random() - 0.5) * 360,
-			},
-			{
-				name: "Space center",
-				summary: "Yup",
-				lat: (Math.random() - 0.5) * 180,
-				lng: (Math.random() - 0.5) * 360
-      }
-    ], 
-    moonData : [
-      {
-        lat: 20,
-        lng: 20,
-        name: "Test",
-        alt: 0.5,
-        image: "2k_mars.jpeg",
-        size: 10
-      }
-    ]
-  },
   Mercury: {
     globeImage: "mercury_surface.jpg",
     destinations: [
@@ -37,7 +10,7 @@ export const TourData = {
         lng: (-190),
       },{
         name: "Poles",
-        summary: "Shielded from the Sun in an Icy Abyssgit oull",
+        summary: "Shielded from the Sun in an Icy Abyss",
         lat: (90),
         lng: (0),
       }
