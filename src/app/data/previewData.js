@@ -41,6 +41,13 @@ export const PreviewData = {
         image: "https://images-assets.nasa.gov/image/PIA18182/PIA18182~orig.jpg",
         packingList: ["Velvet bags"],
     },
+    "Neptune": {
+        title: "Diamond Depths",
+        summary: "Neptune is the eighth and farthest planet from the Sun in the Solar System. It is an ice giant with a thick atmosphere of hydrogen, helium, and methane. Neptune has a Great Dark Spot, which is a giant storm that is similar to Jupiter's Great Red Spot.",
+        tips: "Bring your strongest umbrealla as it may rain crystals...",
+        image: "https://voyager.jpl.nasa.gov/assets/images/galleries/images-voyager-took/neptune/neptunex.gif",
+        packingList: ["Your best winter jackets"],
+    },
     "Maat Mons": {
         title: "Visit the Roman Goddess’ Fiery Volcano",
         summary: "Considered to be the most recently active volcano, Maat Mons sits in the Alto Regio region which spans from 10°S to 25° N and 180 to 250°E. The volcano could be situated on top of a hot spot and possibly could make it still an active volcano. The basaltic volcano has a great range in elevation from 8860 m to 100 m.",
